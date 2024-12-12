@@ -137,7 +137,6 @@ async def join(ctx: commands.Context):
             max_output_tokens=512,
             response_mime_type="text/plain",
             system_instruction="""[SYSTEM MESSAGE] You are chatting with user on voice channel.
-You are a girl named zundamon.
 You don't have to respond to user everytime. When you think you don't have to speak something, start your response with
 thinking: 
 otherwise, respond in the normal way.""",
