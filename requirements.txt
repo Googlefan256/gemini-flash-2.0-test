@@ -5,3 +5,4 @@ pydub
 git+https://github.com/imayhaveborkedit/discord-ext-voice-recv
 requests
 google-generativeai
+black

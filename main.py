@@ -12,6 +12,7 @@ import os
 from dotenv import load_dotenv
 import requests
 from threading import Thread
+from time import sleep
 
 load_dotenv()
 
@@ -93,6 +94,10 @@ class Sink(voice_recv.AudioSink):
             return
         if member.id in self.speaking:
             self.speaking.remove(member.id)
+        Thread(target=self.stop_eventer).start()
+
+    def stop_eventer(self):
+        sleep(0.5)
         now = time()
         if (
             len(self.speaking) == 0
