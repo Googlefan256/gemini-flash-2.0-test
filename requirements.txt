@@ -1,0 +1,7 @@
+python-dotenv
+discord.py[voice]
+google-genai
+pydub
+git+https://github.com/imayhaveborkedit/discord-ext-voice-recv
+requests
+google-generativeai
